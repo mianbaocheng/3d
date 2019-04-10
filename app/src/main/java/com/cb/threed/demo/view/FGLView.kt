@@ -3,7 +3,8 @@ package com.cb.threed.demo.view
 import android.content.Context
 import android.opengl.GLSurfaceView
 import android.util.AttributeSet
-import com.cb.threed.demo.FGLRender
+import com.cb.threed.demo.render.IsoscelesTriangleRender
+import com.cb.threed.demo.render.MultiColorTriangleRender
 
 /**
  * $Author  cb
@@ -24,7 +25,9 @@ class FGLView : GLSurfaceView {
         //设置使用OpenGl2.0版本
         setEGLContextClientVersion(2)
         //设置渲染器
-        setRenderer(FGLRender())
+//        setRenderer(IsoscelesTriangleRender())
+//        setRenderer(FGLRender())
+        setRenderer(MultiColorTriangleRender())
         //当调用requestRender()的时候进行刷新
         renderMode = GLSurfaceView.RENDERMODE_WHEN_DIRTY
     }

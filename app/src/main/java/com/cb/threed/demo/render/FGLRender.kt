@@ -1,4 +1,4 @@
-package com.cb.threed.demo
+package com.cb.threed.demo.render
 
 import android.opengl.GLES20
 import android.opengl.GLSurfaceView
