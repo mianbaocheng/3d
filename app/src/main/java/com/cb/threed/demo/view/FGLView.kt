@@ -29,7 +29,8 @@ class FGLView : GLSurfaceView {
 //        setRenderer(MultiColorTriangleRender())
 //        setRenderer(SquareRender())
 //        setRenderer(CircleRender())
-        setRenderer(CubeRender())
+//        setRenderer(CubeRender())
+        setRenderer(ConeRender())
         //当调用requestRender()的时候进行刷新
         renderMode = GLSurfaceView.RENDERMODE_WHEN_DIRTY
     }
